@@ -14,7 +14,7 @@ import { Signup } from '../../ui/pages/signup';
 const requireAuth = (nextState, replace) => {
   if (!Meteor.loggingIn() && !Meteor.userId()) {
     replace({
-      pathname: '/login',
+      pathname: '/',
       state: { nextPathname: nextState.location.pathname },
     });
   }

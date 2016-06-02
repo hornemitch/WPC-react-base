@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid } from 'react-bootstrap';
 import AppNavigation from '../containers/app-navigation';
+import { Parallax } from 'react-parallax';
 
 export const App = React.createClass({
   propTypes: {
@@ -9,9 +10,9 @@ export const App = React.createClass({
   render() {
     return <div>
       <AppNavigation />
-      <Grid>
+      <div>
         { this.props.children }
-      </Grid>
+      </div>
     </div>;
   },
 });
